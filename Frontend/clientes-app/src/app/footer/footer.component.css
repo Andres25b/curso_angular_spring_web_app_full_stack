@@ -1,0 +1,11 @@
+footer {
+  background-color: #686d76;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.enlaces {
+  color: #19d3da;
+}

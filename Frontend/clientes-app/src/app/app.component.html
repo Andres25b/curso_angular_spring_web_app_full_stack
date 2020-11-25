@@ -1,8 +1,21 @@
 <app-header></app-header>
 
-<h1>{{ title }}</h1>
+<div class="container my-4">
+  <div class="row">
+    <div class="col">
+      <h1>{{ title }}</h1>
+      <hr />
 
-<ul>
-  <li>{{ curso }}</li>
-  <li>{{ profesor }}</li>
-</ul>
+      <blockquote class="blockquote text-center">
+        <p class="mb-0"><b>Curso: </b> {{ curso }}</p>
+        <footer class="blockquote-footer">
+          Instructor: <cite title="Source Title">{{ profesor }}</cite>
+        </footer>
+      </blockquote>
+
+      <app-directiva></app-directiva>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

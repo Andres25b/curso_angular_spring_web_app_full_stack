@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-header">
+    <button type="button" class="btn btn-primary my-3" (click)="setHabilitar()">
+      {{ habilitar == true ? "Ocultar" : "Mostrar" }}
+    </button>
+    <h5 class="card-title">Lo que aprenderemos:</h5>
+  </div>
+  <ul class="list-group" *ngIf="habilitar">
+    <li *ngFor="let curso of listaCurso" class="list-group-item">
+      {{ curso }}
+    </li>
+  </ul>
+</div>
